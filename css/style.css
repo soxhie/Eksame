@@ -14,14 +14,13 @@ body {
 
 .background-image {
   position: fixed;
-  top: 0;
+  top: -100%;
   right: 0;
   bottom: 0;
   left: 0;
-  display: flex;
-  align-items: stretch;
-  justify-content: center;
-  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  transition: 3s ease;
   /* z-index positions the background image under the black boxss */
   z-index: -1;
 }
@@ -48,7 +47,7 @@ body {
   margin-right: 0%; */
 }
 
-.black-box button {
+.mainbutton {
   background-color: #b74040;
   color: white;
   padding: 10px 20px;
@@ -60,12 +59,14 @@ body {
   font-size: 16px;
   margin-top: 10px;
 }
+
 .topmenu {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-size: 20px;
 }
+
 a {
-  color: rgb(5, 6, 7);
+  color: rgb(3, 3, 3);
   text-decoration: none;
 }
 
@@ -78,14 +79,23 @@ a {
   cursor: pointer;
   background-color: white;
   color: black;
-  border: none;
   border-radius: 20px;
   margin: 20px;
   font-family: "libre";
   justify-content: space-between;
 }
+/* opacity: 0;
+  transform: scale(1);
+  transition: transform 10s ease, opacity 1s ease;
+} */
+
+.button2.visible {
+  opacity: 1;
+  transition: scale(5);
+}
 .button2:hover {
   background-color: #b74040;
+  opacity: 1;
 }
 
 h1 {
@@ -104,6 +114,13 @@ h1 {
   align-items: stretch;
   margin-top: auto;
   margin-bottom: 120px;
+}
+.tlink a {
+  color: white;
+  font-size: 25px;
+}
+.tlink a:hover {
+  color: #b74040;
 }
 
 .footercontent {

@@ -28,14 +28,32 @@ nav a {
   color: white;
 }
 @media (max-width: 600px) {
+  nav ul {
+    display: none;
+  }
+  .burger-menu {
+    display: block;
+    cursor: pointer;
+  }
+  .burger-menu .bar {
+    width: 30px;
+    height: 3px;
+    background-color: whitesmoke;
+    margin: 6px 0;
+  }
+  .topmenu.show {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    top: 60px;
+    left: 0;
+    width: 100%;
+  }
+}
+@media (max-width: 600px) {
   .black-box {
     padding: 10px;
   }
-}
-
-.grid_1-1 {
-  display: flex;
-  flex-direction: column;
 }
 
 .col {
@@ -56,6 +74,10 @@ img {
   text-align: center;
   width: 100%;
 }
+.grid_1-1 {
+  display: flex;
+  flex-direction: column;
+}
 @media (min-width: 600px) {
   .grid_1-1 {
     display: grid;
@@ -64,20 +86,30 @@ img {
   }
 }
 
+.tlink {
+  text-align: center;
+  bottom: 15px;
+}
+
 footer {
-  display: flex;
-  justify-content: space-evenly;
+  /* display: flex; */
+  /* justify-content: space-evenly; */
   /* flex-direction: row; */
   background-color: black;
   color: white;
   text-align: center;
   padding: 15px;
-  z-index: 1;
+  /* z-index: 1; */
   width: 100%;
   position: fixed;
   bottom: 5px;
+  left: 0;
+  right: 0;
+  bottom: 0;
   /* margin-bottom: 0%; */
   /* margin-top: 90%; */
-  bottom: 0;
-  align-items: flex-end;
+  /* align-items: flex-end; */
+}
+#footer1 {
+  position: relative;
 }
