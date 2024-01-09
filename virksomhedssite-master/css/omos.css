@@ -1,0 +1,275 @@
+body {
+  background-color: #a0a582;
+}
+
+nav {
+  background-image: url(img/banner.svg);
+  background-size: cover;
+  width: auto;
+  height: 70px;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+li {
+  margin-right: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  font-size: 16px;
+  transition: color 0.3s ease-in-out;
+}
+
+a:hover {
+  color: #ffcc00;
+}
+
+.banner {
+  width: 100%;
+}
+
+.grid_1_1 {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+}
+
+.roza {
+  width: 74%;
+  margin-right: -7%;
+  height: auto;
+}
+
+.overskrift {
+  color: #9a4f2e;
+  margin-left: 45%;
+  font-family: elsie_bold;
+}
+
+.underskrift {
+  color: #294036;
+  margin-left: -26%;
+}
+
+p {
+  color: #294036;
+  text-align: justify;
+  line-height: 1.5;
+}
+
+.col1 {
+  flex: 1;
+  overflow: hidden;
+  padding: 2% 7% 0% 15%;
+  text-align: center;
+  line-height: 2;
+}
+
+.order {
+  flex: 1;
+  padding: 2% 15% 0% 7%;
+  text-align: center;
+  line-height: 2;
+}
+
+.order2 {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  padding: 2% 0% 3% 21%;
+  text-align: center;
+  line-height: 2;
+}
+
+.col2 {
+  flex: 1;
+  overflow: hidden;
+  padding: 2% 17% 0% 13%;
+  text-align: center;
+  line-height: 2;
+}
+
+/* Footer*/
+
+footer {
+  background-color: #d0b590;
+  color: #a26a41;
+  padding: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  margin-left: -11px;
+  margin-right: -9px;
+  margin-top: 26px;
+}
+
+.column {
+  flex: 1;
+  margin: 0 20px;
+  max-width: 300px;
+}
+
+.column h1 {
+  font-size: 1.5em;
+}
+
+.icons {
+  display: flex;
+  justify-content: start;
+}
+
+.newsletter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.newsletter input {
+  padding: 3px;
+  margin-top: -4px;
+  width: 80%;
+  margin-left: -54px;
+}
+
+.newsletter button {
+  padding: 10px;
+  background-color: #a26a41;
+  color: #d0b590;
+  border: none;
+  cursor: pointer;
+  margin-right: -287px;
+  margin-top: -31px;
+}
+
+.nyhed {
+  margin-left: -182px;
+}
+
+.info {
+  color: #a26a41;
+  margin-top: -8px;
+  font-size: medium;
+}
+
+.artboard {
+  width: 75%;
+  height: auto;
+  margin-left: -26px;
+}
+
+:root {
+  --green: #294036;
+  --teracotta: #9a4f2e;
+  --honey: #d4aa3e;
+  --sage: #a0a582;
+  --darkbrown: #4e3629;
+  --brown: #a26a41;
+  --beige: #d0b590;
+  --cream: #efe6d3;
+}
+a {
+  font-family: metropolis;
+  text-decoration: none;
+  color: var(--honey);
+}
+
+#navbar {
+  background: var(--teracotta);
+  height: 100px;
+  line-height: 80px;
+  width: 100vw;
+}
+
+.nav_wrapper {
+  margin: auto;
+  text-align: center;
+  width: 90%;
+}
+
+.menu img {
+  padding-left: 0.5em;
+  padding-right: 0em;
+  margin: 0;
+}
+
+.logo {
+  float: left;
+  margin-top: 25px;
+}
+
+#navbar ul {
+  float: right;
+  list-style: none;
+}
+
+#navbar li {
+  display: inline-block;
+  margin-right: 1.5em;
+}
+
+#navbar li a:hover {
+  color: var(--cream);
+  transition: all 1s ease;
+  -webkit-transition: all 1s ease;
+}
+
+.searchbar {
+  display: flex;
+  align-items: center;
+}
+
+.searchbar input {
+  padding: 3px;
+  margin-right: 0.2em;
+  border: 0;
+  border-radius: 5px;
+  font-family: metropolis;
+  font: 1em;
+  background-color: var(--cream);
+  padding-left: 1em;
+}
+
+.searchbar button {
+  border-radius: 5px;
+  border: 0;
+  font-family: metropolis;
+  font-size: 0.8em;
+  padding-left: 1em;
+  padding-right: 1em;
+  padding-bottom: 0.2em;
+  padding-top: 0.2em;
+  background-color: var(--honey);
+  color: var(--teracotta);
+}
+
+@font-face {
+  font-family: elsie;
+  src: url(fonte/elsieswashwoff2);
+}
+@font-face {
+  font-family: elsie_bold;
+  src: url(fonte/elsieswash_bold.woff2);
+}
+
+@font-face {
+  font-family: metropolis;
+  src: url(fonte/metropolis.woff2);
+}
+
+@font-face {
+  font-family: metropolis_bold;
+  src: url(fonte/metropolis_bold.woff2);
+}
+
+@font-face {
+  font-family: metropolis_black;
+  src: url(fonte/metropolis_black.woff2);
+}

@@ -1,0 +1,281 @@
+#screen {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16/9;
+  background-color: red;
+  overflow: hidden;
+}
+
+#game {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+}
+
+#game_background {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  background-color: bisque;
+  background-image: url(../img/baggrund.png);
+  background-size: cover;
+}
+#game_elements {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+}
+
+/* ********************** nice babies ******************* */
+#nicebaby_container,
+#nicebaby_container2 {
+  position: absolute;
+  width: 7%;
+  aspect-ratio: 5/7;
+  transform-origin: center 95%;
+}
+
+#nicebaby_sprite {
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/carljohan_r.svg);
+  background-size: cover;
+}
+#nicebaby_sprite2 {
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/carljohan_g.svg);
+  background-size: cover;
+}
+
+/* ********************** evil babies ******************* */
+
+#evilbaby_container {
+  position: absolute;
+  width: 8%;
+  aspect-ratio: 7/8;
+  transform-origin: center 95%;
+}
+
+#evilbaby_sprite {
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/fluesvamp_2.svg);
+  background-size: cover;
+}
+
+/* ********************** nice babies position ******************* */
+.pos1 {
+  top: -20%;
+  left: 10%;
+}
+.pos2 {
+  top: -20%;
+  left: 20%;
+}
+.pos3 {
+  top: -20%;
+  left: 37%;
+}
+.pos4 {
+  top: -20%;
+  left: 35%;
+}
+.pos5 {
+  top: -20%;
+  left: 54%;
+}
+.pos6 {
+  top: -20%;
+  left: 49%;
+}
+.pos7 {
+  top: -20%;
+  left: 65%;
+}
+.pos8 {
+  top: -20%;
+  left: 78%;
+}
+.pos9 {
+  top: -20%;
+  left: 70%;
+}
+.pos10 {
+  top: -20%;
+  left: 82%;
+}
+/* ********************** evil babies positions ******************* */
+.posFall1 {
+  top: -20%;
+  left: 21%;
+}
+.posFall2 {
+  top: -20%;
+  left: 35%;
+}
+.posFall3 {
+  top: -20%;
+  left: 55%;
+}
+.posFall4 {
+  top: -20%;
+  left: 75%;
+}
+.posFall5 {
+  top: -20%;
+  left: 85%;
+}
+
+#game_foreground {
+  position: absolute;
+  top: 13%;
+  right: 10%;
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/forgrund.svg);
+  background-size: 50%;
+  pointer-events: none;
+  background-repeat: no-repeat;
+}
+
+/* ********************* UI elementer ********************* */
+
+#game_ui {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+#score_board {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: absolute;
+  top: 64.6%;
+  left: 7%;
+  width: 28%;
+  aspect-ratio: 8/3;
+  background-image: url(../img/ui_points.svg);
+  background-size: cover;
+}
+#mine_points {
+  position: absolute;
+  top: 20%;
+  left: 10%;
+  font-size: 6cqw;
+  font-family: sans-serif;
+  color: yellow;
+}
+#energy_board {
+  position: absolute;
+  top: 80%;
+  left: 0%;
+  width: 36%;
+  aspect-ratio: 3/1;
+  /*background-image: url(../img/ui_life.svg);*/
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/*#mine_liv {
+  font-size: 3rem;
+  font-family: sans-serif;
+  color: red;
+}*/
+#heart1,
+#heart2,
+#heart3 {
+  position: absolute;
+  width: 14%;
+  aspect-ratio: 81.87/72.35;
+  background-image: url(../img/heart.svg);
+  background-size: cover;
+  top: 39.2%;
+  left: 2%;
+}
+#heart2 {
+  left: 17%;
+}
+#heart3 {
+  left: 32%;
+}
+
+#time_board {
+  position: absolute;
+  top: 64%;
+  left: 1%;
+  width: 6%;
+  aspect-ratio: 100/160;
+  background-image: url(../img/ui_time.svg);
+  background-size: cover;
+}
+
+/* ********************* Start- og slutskærme ********************* */
+
+#start {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/startgame.png);
+  background-size: cover;
+}
+#play {
+  position: absolute;
+  width: 20%;
+  left: 40%;
+  top: 30%;
+  aspect-ratio: 470/280;
+  background-image: url("../img/startbutton1.png");
+  background-size: cover;
+}
+#play:hover {
+  width: 22%;
+  left: 36%;
+  top: 54%;
+}
+
+#game_over {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/youdiescreen.png);
+  background-size: cover;
+  /* background-color: rgba(0, 0, 0, 0.8); */
+  background-color: black;
+}
+#play_again_1,
+#play_again_2 {
+  position: absolute;
+  width: 30%;
+  aspect-ratio: 640/280;
+  background-image: url("../img/play_again.png");
+  background-size: cover;
+  top: 55%;
+  left: 37%;
+}
+
+#level_complete {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/gamewin.svg);
+  background-size: cover;
+  /* background-color: rgba(0, 0, 0, 0.5); */
+  /*background-color: black;*/
+}

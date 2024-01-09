@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Svampespillet_v5</title>
+    <link rel="icon" href="img/favicon.png" type="image/svg+xml" />
+    <link rel="stylesheet" href="css/layout.css" />
+    <link rel="stylesheet" href="css/spil.css" />
+    <link rel="stylesheet" href="css/animationer.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="spil.html">Spil</a>
+        <a href="ide.html">Ide</a>
+        <a href="assets.html">Assets</a>
+        <a href="grafik.html">Grafik</a>
+        <a href="teknik.html">Teknik</a>
+      </nav>
+    </header>
+
+    <main>
+      <div id="screen">
+        <div id="game">
+          <div id="game_background"></div>
+          <div id="game_elements">
+            <div id="nicebaby_container">
+              <div id="nicebaby_sprite"></div>
+            </div>
+            <div id="nicebaby_container2">
+              <div id="nicebaby_sprite2"></div>
+            </div>
+
+            <div id="evilbaby_container">
+              <div id="evilbaby_sprite"></div>
+            </div>
+
+            <div id="mellemgrund"></div>
+          </div>
+          <div id="game_foreground"></div>
+
+          <div id="game_ui">
+            <div id="score_board">
+              <div id="mine_points"></div>
+            </div>
+            <div id="energy_board">
+              <div id="mine_liv"></div>
+              <div id="heart1"></div>
+              <div id="heart2"></div>
+              <div id="heart3"></div>
+            </div>
+            <div id="time_board"><div id="sand"></div></div>
+          </div>
+        </div>
+        <div id="start">
+          <div id="play"></div>
+        </div>
+        <div id="game_over">
+          <div id="play_again_1"></div>
+        </div>
+        <div id="level_complete">
+          <div id="play_again_2"></div>
+        </div>
+      </div>
+    </main>
+    <audio
+      id="forside_music"
+      src="../svampespillet-v7-loesning/sounds/game music.mp3"
+    ></audio>
+    <footer>Sophie's game</footer>
+    <script src="js/game.js"></script>
+  </body>
+</html>

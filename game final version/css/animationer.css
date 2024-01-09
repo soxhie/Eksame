@@ -1,0 +1,101 @@
+/************* ANIMATIONER *************/
+
+/* falde animation */
+.fald {
+  animation: fald infinite linear;
+}
+
+@keyframes fald {
+  from {
+    translate: 0 0;
+  }
+  to {
+    translate: 0 350%;
+  }
+}
+
+/* forsvind animation */
+.forsvind {
+  animation: forsvind 2s 1 both;
+}
+
+@keyframes forsvind {
+  from {
+    opacity: 1;
+    rotate: 0deg;
+    scale: 1;
+  }
+  to {
+    opacity: 0;
+    rotate: 720deg;
+    scale: 0;
+  }
+}
+
+/************* ANDRE CLASSER *************/
+
+.frys {
+  animation-play-state: paused;
+}
+
+.hide {
+  display: none;
+}
+
+.gray {
+  filter: grayscale();
+}
+
+/************* Hastigheder og delays *************/
+
+.speed1 {
+  animation-duration: 1s;
+}
+.speed2 {
+  animation-duration: 2s;
+}
+.speed3 {
+  animation-duration: 3s;
+}
+.delay1 {
+  animation-delay: 0.2s;
+}
+.delay2 {
+  animation-delay: 0.6s;
+}
+.delay3 {
+  animation-delay: 0.9s;
+}
+.delay4 {
+  animation-delay: 1.2s;
+}
+
+/************* TIMER *************/
+
+/*Indholdet af the cross */
+#sand {
+  position: absolute;
+  background-image: url(../img/sand.svg);
+  background-size: cover;
+  width: 100%;
+  aspect-ratio: 125/200;
+
+  clip-path: inset(100% 0% 0% 0%);
+}
+
+/* animation af clip-path masken (top right bund left)*/
+.timer {
+  animation-name: timer_kf;
+  animation-duration: 40s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+
+@keyframes timer_kf {
+  0% {
+    clip-path: inset(100% 0 0 0);
+  }
+  100% {
+    clip-path: inset(0% 0 0 0);
+  }
+}

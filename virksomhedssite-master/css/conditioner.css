@@ -1,0 +1,108 @@
+body {
+  background-color: #a0a582;
+}
+:root {
+  --green: #294036;
+  --teracotta: #9a4f2e;
+  --honey: #d4aa3e;
+  --sage: #a0a582;
+  --darkbrown: #4e3629;
+  --brown: #a26a41;
+  --beige: #d0b590;
+  --cream: #efe6d3;
+}
+a {
+  font-family: metropolis;
+  text-decoration: none;
+  color: var(--honey);
+}
+
+#navbar {
+  background: var(--teracotta);
+  height: 100px;
+  line-height: 80px;
+  width: 100vw;
+}
+
+.nav_wrapper {
+  margin: auto;
+  text-align: center;
+  width: 90%;
+}
+
+.menu img {
+  padding-left: 0.5em;
+  padding-right: 0em;
+  margin: 0;
+}
+
+.logo {
+  float: left;
+  margin-top: 25px;
+}
+
+#navbar ul {
+  float: right;
+  list-style: none;
+}
+
+#navbar li {
+  display: inline-block;
+  margin-right: 1.5em;
+}
+
+#navbar li a:hover {
+  color: var(--cream);
+  transition: all 1s ease;
+  -webkit-transition: all 1s ease;
+}
+
+.searchbar {
+  display: flex;
+  align-items: center;
+}
+
+.searchbar input {
+  padding: 3px;
+  margin-right: 0.2em;
+  border: 0;
+  border-radius: 5px;
+  font-family: metropolis;
+  font: 1em;
+  background-color: var(--cream);
+  padding-left: 1em;
+}
+
+.searchbar button {
+  border-radius: 5px;
+  border: 0;
+  font-family: metropolis;
+  font-size: 0.8em;
+  padding-left: 1em;
+  padding-right: 1em;
+  padding-bottom: 0.2em;
+  padding-top: 0.2em;
+  background-color: var(--honey);
+  color: var(--teracotta);
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* To kolonner med lige bredde */
+  /* Afstand mellem kolonner */
+
+  margin: auto;
+}
+
+.conditioner {
+  background-color: a0a582;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.deephair {
+  margin-left: -238px;
+  margin-top: 10px;
+  width: 306%;
+  height: auto;
+}

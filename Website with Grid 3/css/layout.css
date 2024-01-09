@@ -1,0 +1,102 @@
+@media (min-width: 800px) {
+   header{gap: 30px;}
+    ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 15px;
+        list-style: none;
+        
+    }
+
+    main {
+        max-width: 1200px;
+        margin: auto;
+    }
+
+    .grid_2-1 {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 40px;
+    }
+
+    .grid_1-1 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 40px;
+    }
+
+    .order {
+        order: -1;
+    }
+
+    .col {
+        max-width: 65ch;
+    }
+
+    img {
+        align-self: stretch;
+        object-fit: cover;
+        margin: 0;
+    }
+    .flex_col{
+        display: flex;
+        flex-direction: column;
+       /* align-items: flex-start;*/
+ 
+    }
+    .flex_col :last-child{
+        margin-top: auto;
+        
+    }
+
+    .grid_5-3 {
+        display: grid;
+        grid-template-columns: 5fr 3fr;
+        gap: 40px;
+    }
+
+    .grid_2-3 {
+        display: grid;
+        grid-template-columns: 2fr 3fr;
+        gap: 20px
+    }
+
+    .grid_3-2 {
+        display: grid;
+        grid-template-columns: 3fr 2fr;
+        gap: 40px;
+    }
+
+.grid_1-1-1{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px;
+}
+.grid_1-1-1-1{
+    display: grid;
+    grid-template-columns:repeat(4,1fr);
+    grid-template-rows: repeat(3,1fr);
+    gap: 10px;
+}
+.grid_galleri {
+    grid-column: 3/ span 2;
+    gap: 10px;
+}
+.apple{
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 2;
+}
+.kode{
+    grid-column: 3 /span 2 ;
+   grid-row: 2 / span 1;
+}
+.macbook{
+    grid-column: 4 /span 2 ;
+   grid-row: 2 / span 1;
+}
+.keyboard{
+    grid-column: 2 / span 3;
+}
+
+}

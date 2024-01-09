@@ -1,0 +1,116 @@
+@media (min-width: 800px) {
+  header {
+    gap: 30px;
+  }
+  .topmenu {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 15px;
+    list-style: none;
+    justify-content: space-evenly;
+    margin: 15px;
+  }
+  /* .recipe{
+    display: list-item;
+    color: white;
+    flex-direction: column; 
+    
+
+}*/
+  body {
+    margin: 0;
+  }
+
+  .buttonsite {
+    flex-direction: column;
+  }
+
+  main {
+    max-width: 1600px;
+    margin: auto;
+  }
+
+  /* .grid_2-1 {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 40px;
+    } */
+
+  .grid_1-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .col_order {
+    order: -1;
+  }
+  /* 
+    .col {
+        max-width: 65ch;
+    } */
+
+  img {
+    align-self: stretch;
+    object-fit: cover;
+    margin: 0;
+  }
+  .flex_col {
+    display: flex;
+    flex-direction: column;
+    /* align-items: flex-start;*/
+  }
+  .flex_col :last-child {
+    margin-top: auto;
+  }
+
+  .grid_1-1-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px;
+  }
+
+  /* Reset some default styles to make styling more consistent across browsers */
+  * {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+  }
+
+  /* Style for the button */
+  .my-button {
+    display: block;
+    padding: 20px 20px;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    border: none;
+    border-radius: 20px;
+    margin: 20px;
+    font-family: "libre";
+    justify-content: space-between;
+  }
+  .buttonsite2 {
+    margin: 40px;
+
+    justify-content: space-between;
+  }
+
+  /* Style the button on hover */
+  .my-button:hover {
+    background-color: #c1c5c1;
+  }
+
+  .bottom_img {
+    align-items: end;
+  }
+  .nope {
+    color: black;
+  }
+}
