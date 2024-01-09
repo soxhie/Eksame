@@ -1,9 +1,15 @@
+nav {
+  border: 1px solid white;
+}
+
 body {
   display: flex;
   align-items: center;
   justify-content: center;
   height: 100vh;
   margin: 0;
+  background-color: black;
+  color: white;
 }
 
 .background-image {
@@ -28,22 +34,18 @@ body {
 .black-box {
   background-color: black;
   color: white;
-  padding: 140px;
+  padding: 80px;
   border-radius: 8px;
   margin-top: 20px;
   text-align: center;
-  position: relative;
+  position: center;
   /* this does that the box is on top of the image */
   z-index: 3;
   max-width: 600px;
   width: 90%;
-  margin: 0;
+  margin: 0px;
   /* margin-left: 0%;
   margin-right: 0%; */
-}
-
-.black-box p {
-  margin-bottom: 20px;
 }
 
 .black-box button {
@@ -62,9 +64,50 @@ body {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-size: 20px;
 }
-.a {
-  color: aliceblue;
+a {
+  color: rgb(5, 6, 7);
+  text-decoration: none;
 }
+
+.button2 {
+  display: block;
+  padding: 20px 20px;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  background-color: white;
+  color: black;
+  border: none;
+  border-radius: 20px;
+  margin: 20px;
+  font-family: "libre";
+  justify-content: space-between;
+}
+.button2:hover {
+  background-color: #b74040;
+}
+
+h1 {
+  text-align: center;
+  justify-content: center;
+  margin-left: 20px;
+  margin-right: 2opx;
+}
+
+.col_order {
+  border-width: 0.5px;
+  border-style: solid;
+  border-color: white;
+  color: black;
+  padding: 10px;
+  align-items: stretch;
+  margin-top: auto;
+  margin-bottom: 120px;
+}
+
 .footercontent {
-  font-size: 18px;
+  font-size: 15px;
+  border: 1px solid white;
+  padding: 22px;
 }
